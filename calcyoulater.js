@@ -1,12 +1,29 @@
+function calcYouLater(firstNum, mathOper, secondNum) {
+    var calcFirst = document.getElementById('firstNum').value
+    var mathOper = document.getElementById('mathOper').value
+    var calcSecond = document.getElementById('secondNum').value
+    var outputElement = document.getElementById('calcResults')
 
-
-
-function simpleAddition(firstNum, secondNum) {
-    var addFirst = document.getElementById('firstNum').value
-    var addSecond = document.getElementById('secondNum').value
-    var outputElement = document.getElementById('additionResults')
-
-    var additionResults = Number(addFirst) + Number(addSecond)
-
-    outputElement.innerHTML = additionResults
+switch (mathOper) {
+    case "+":
+        calcResults = Number(calcFirst) + Number(calcSecond)
+        break
+    case "-":
+        calcResults = Number(calcFirst) - Number(calcSecond)
+        break
+    case "*":
+        calcResults = Number(calcFirst) * Number(calcSecond)
+        break
+    case "/":
+        calcResults = Number(calcFirst) / Number(calcSecond)
+        break
+    case "%":
+        calcResults = Number(calcFirst) % Number(calcSecond)
+        break
+    default:
+        calcResults = "Oops! Try again."
 }
+
+outputElement.innerHTML = calcResults
+}
+
