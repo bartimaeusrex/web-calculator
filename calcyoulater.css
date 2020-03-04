@@ -1,0 +1,49 @@
+
+h1, h2, header {
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-decoration:underline;
+}
+
+.calculator {
+    position: relative;
+    margin:20px;
+    background-color:#ebdcdc;
+    padding:25px;
+}
+
+input {
+    border:1px solid rgb(0, 0, 0, 0.3);
+}
+
+input, #calcResults, #equals {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(196, 44, 44);
+    font-weight: bold;
+    font-size: 40px;
+    display:inline-block;
+    text-align:center;
+    width: 150px;
+}
+
+input, #equals {
+    border-radius:10px;
+}
+
+#mathOper, #equals {
+    width:50px;
+    border:1px solid rgb(0, 0, 0, 0.3);
+    background-color:rgb(224, 216, 198);
+}
+
+#equals:hover {
+    background-color:rgb(247, 238, 213);
+}
+
+#calcResults {
+    text-align:left;
+    margin-left:15px;
+    width:400px;
+}
